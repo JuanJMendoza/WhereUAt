@@ -16,9 +16,10 @@ import {
   StatusBar,
 } from 'react-native';
 
-import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE, Marker, Heatmap} from 'react-native-maps';
 
 import {Locations} from './DummyData/Data';
+import {CustomMarker} from './source/CustomMarker';
 
 export default class App extends Component {
   render() {
@@ -33,16 +34,18 @@ export default class App extends Component {
             latitudeDelta: 0.4,
             longitudeDelta: 0.5,
           }}>
-          {Locations.map((location, idx) => (
+          <Heatmap points={Locations} radius={50} />
+          {/* {Locations.map((location, idx) => (
             <Marker
               key={idx}
               coordinate={{
                 latitude: location.latitude,
                 longitude: location.longitude,
-                title: location.title,
-              }}
-            />
-          ))}
+                // title: location.title,
+              }}>
+              <CustomMarker item={location} />
+            </Marker>
+          ))} */}
         </MapView>
       </View>
     );
