@@ -12,12 +12,13 @@ const Tab = createMaterialBottomTabNavigator();
 
 export const BottomTabs = () => {
   return (
-    <Tab.Navigator activeColor="#fff" style={{backgroundColor: 'tomato'}}>
+    <Tab.Navigator activeColor="#fff">
       <Tab.Screen
         name="HomeFeed"
         component={HomeFeed}
         options={{
           tabBarLabel: 'Home',
+          tabBarColor: '#009387',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
@@ -28,6 +29,7 @@ export const BottomTabs = () => {
         component={HeatMap}
         options={{
           tabBarLabel: 'Explore',
+          tabBarColor: '#009387',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="compass" color={color} size={26} />
           ),

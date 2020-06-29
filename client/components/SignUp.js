@@ -26,10 +26,10 @@ export class SignUpScreen extends Component {
     return (
       <SignUpStack.Navigator
         screenOptions={{
-          headerStyle: {
-            backgroundColor: '#009387',
-          },
-          headerTintColor: '#fff',
+          // headerStyle: {
+          //   backgroundColor: '#009387',
+          // },
+          headerTintColor: '#000',
           headerTitleStyle: {
             fontWeight: 'bold',
           },
@@ -42,7 +42,8 @@ export class SignUpScreen extends Component {
               <Icon.Button
                 name="ios-menu"
                 size={25}
-                backgroundColor="#009387"
+                backgroundColor="#fff"
+                color="#000"
                 onPress={() => this.props.navigation.openDrawer()}
               />
             ),

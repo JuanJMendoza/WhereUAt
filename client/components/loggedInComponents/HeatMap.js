@@ -41,10 +41,8 @@ export class HeatMap extends Component {
     return (
       <HeatMapStack.Navigator
         screenOptions={{
-          headerStyle: {
-            backgroundColor: '#009387',
-          },
-          headerTintColor: '#fff',
+          headerTransparent: true,
+          headerTintColor: '#000',
           headerTitleStyle: {
             fontWeight: 'bold',
           },
@@ -57,7 +55,8 @@ export class HeatMap extends Component {
               <Icon.Button
                 name="ios-menu"
                 size={25}
-                backgroundColor="#009387"
+                backgroundColor="Transparent"
+                color="#000"
                 onPress={() => this.props.navigation.openDrawer()}
               />
             ),

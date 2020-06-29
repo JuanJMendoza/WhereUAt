@@ -30,6 +30,7 @@ export default class App extends Component {
     return (
       <NavigationContainer>
         <Drawer.Navigator>
+          {/* Use check here to see if user has auth token, if so show Home, else show Sign up  */}
           <Drawer.Screen name="Home" component={BottomTabs} />
           <Drawer.Screen name="Sign up" component={SignUpScreen} />
         </Drawer.Navigator>

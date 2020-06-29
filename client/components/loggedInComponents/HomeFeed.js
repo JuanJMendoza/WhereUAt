@@ -19,10 +19,8 @@ export const HomeFeed = ({navigation}) => {
   return (
     <HomeStack.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: '#009387',
-        },
-        headerTintColor: '#fff',
+        headerTransparent: true,
+        headerTintColor: '#000',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -35,8 +33,9 @@ export const HomeFeed = ({navigation}) => {
             <Icon.Button
               name="ios-menu"
               size={25}
-              backgroundColor="#009387"
-              onPress={() => navigation.openDrawer()}
+              backgroundColor="Transparent"
+              color="#000"
+              onPress={() => this.props.navigation.openDrawer()}
             />
           ),
         }}
