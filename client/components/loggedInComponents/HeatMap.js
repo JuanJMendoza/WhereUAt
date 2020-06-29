@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
 import MapView, {PROVIDER_GOOGLE, Marker, Heatmap} from 'react-native-maps';
 import {Locations} from '../../../DummyData/Data';
-import {BottomTabs} from './BottomTabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import {createStackNavigator} from '@react-navigation/stack';
@@ -39,7 +38,6 @@ const HeatMapScreen = ({navigation}) => {
 
 export class HeatMap extends Component {
   render() {
-    const Stack = createStackNavigator();
     return (
       <HeatMapStack.Navigator
         screenOptions={{
@@ -52,7 +50,7 @@ export class HeatMap extends Component {
           },
         }}>
         <HeatMapStack.Screen
-          name="Home"
+          name="Explore"
           component={HeatMapScreen}
           options={{
             headerLeft: () => (
@@ -65,7 +63,6 @@ export class HeatMap extends Component {
             ),
           }}
         />
-        <HeatMapStack.Screen name="Bottom Tabs" component={BottomTabs} />
       </HeatMapStack.Navigator>
     );
   }

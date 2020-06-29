@@ -12,12 +12,9 @@ const Tab = createMaterialBottomTabNavigator();
 
 export const BottomTabs = () => {
   return (
-    <Tab.Navigator
-      initialRouteName="Feed"
-      activeColor="#fff"
-      style={{backgroundColor: 'tomato'}}>
+    <Tab.Navigator activeColor="#fff" style={{backgroundColor: 'tomato'}}>
       <Tab.Screen
-        name="Feed"
+        name="HomeFeed"
         component={HomeFeed}
         options={{
           tabBarLabel: 'Home',

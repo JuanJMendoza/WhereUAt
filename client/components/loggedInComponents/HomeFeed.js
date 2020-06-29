@@ -41,7 +41,6 @@ export const HomeFeed = ({navigation}) => {
           ),
         }}
       />
-      <HomeStack.Screen name="Bottom Tabs" component={BottomTabs} />
     </HomeStack.Navigator>
   );
 };

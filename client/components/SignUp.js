@@ -4,13 +4,15 @@ import {Styles} from '../../public/stylesheets/allScreens';
 import {createStackNavigator} from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import {HomeFeed} from './loggedInComponents/HomeFeed';
+
 const SignUpStack = createStackNavigator();
 
 const SignUp = ({navigation}) => {
   return (
     <View style={Styles.center}>
       <Text>Sign up</Text>
-      <Button title="Sign up" onPress={() => navigation.navigate('HeatMap')} />
+      <Button title="Sign up" onPress={() => navigation.navigate('Home')} />
     </View>
   );
 };
