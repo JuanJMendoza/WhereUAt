@@ -35,7 +35,7 @@ export const HomeFeed = ({navigation}) => {
               size={25}
               backgroundColor="Transparent"
               color="#000"
-              onPress={() => this.props.navigation.openDrawer()}
+              onPress={() => navigation.openDrawer()}
             />
           ),
         }}
