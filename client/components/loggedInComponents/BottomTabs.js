@@ -7,6 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import {HomeFeed} from './HomeFeed';
 import {HeatMap} from './HeatMap';
+import {ProfileFeed} from './Profile';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -35,6 +36,16 @@ export const BottomTabs = () => {
           ),
         }}
       />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileFeed}
+        options={{
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({color}) => (
+            <MaterialCommunityIcons name="account" color={color} size={26} />
+          ),
+        }}
+      />
       {/* <Tab.Screen
         name="Notifications"
         component={Notifications}
@@ -42,16 +53,6 @@ export const BottomTabs = () => {
           tabBarLabel: 'Updates',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="bell" color={color} size={26} />
-          ),
-        }}
-      /> */}
-      {/* <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
         }}
       /> */}
