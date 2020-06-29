@@ -23,6 +23,7 @@ import {SignUpScreen} from './client/components/SignUp';
 
 import {BottomTabs} from './client/components/loggedInComponents/BottomTabs';
 import {DrawerContent} from './client/components/loggedInComponents/DrawerContent';
+import {ProfileFeed} from './client/components/loggedInComponents/Profile';
 
 export default class App extends Component {
   render() {
